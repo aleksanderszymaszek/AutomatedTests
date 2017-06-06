@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace ProjectAT.UITests
 {
     [TestFixture]
-    public class FirstClass
+    public class SecondClass
     {
         public const int IAmNot10 = 5;
 
