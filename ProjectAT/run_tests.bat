@@ -1,1 +1,1 @@
-packages\NUnit.ConsoleRunner.3.6.1\tools\nunit3-console.exe ProjectAT.UITests\bin\Debug\ProjectAT.UITests.dll
+packages\NUnit.ConsoleRunner.3.6.1\tools\nunit3-console.exe ProjectAT.UITests\bin\Debug\ProjectAT.UITests.dll --where "cat==UI"

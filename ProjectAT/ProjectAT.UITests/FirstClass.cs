@@ -29,6 +29,7 @@ namespace ProjectAT.UITests
         [Test]
         [Category("uitrimming")]
         [Category("security")]
+        [Category("automated")]
         public void TestTwo()
         {
             Thread.Sleep(TimeSpan.FromSeconds(1));
@@ -38,6 +39,7 @@ namespace ProjectAT.UITests
 
         [Test]
         [Description("This test should fail")]
+        [Category("run")]
         public void TestThree()
         {
             Thread.Sleep(TimeSpan.FromSeconds(1));
