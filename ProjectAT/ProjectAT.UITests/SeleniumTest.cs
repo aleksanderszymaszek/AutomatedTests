@@ -22,12 +22,17 @@ namespace ProjectAT.UITests
             Browser.Manage().Window.Maximize();
         }
 
-        [TestCase("http://wwww.wp.pl")]
-        [TestCase("http://wwww.onet.pl")]
+        [TestCase("http://wwww.wp.pl", "Wiadomości")]
+        [TestCase("http://wwww.onet.pl", "Pogoda")]
         [Category("UI")]
-        public void FirstSeleniumTest(string url)
+        public void FirstSeleniumTest(string url, string textinlink)
         {
+            string xpath = $"//a[contains(., '{textinlink}')]"; 
             Browser.Navigate().GoToUrl(url);
+            IWebElement link = Browser.FindElement(By.XPath(xpath));
+            link.Click();
+            
+
         }
 
         [OneTimeTearDown]
