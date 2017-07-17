@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Fish : Animal
+    public class Fish : Animal
     {
         public override void Move()
         {

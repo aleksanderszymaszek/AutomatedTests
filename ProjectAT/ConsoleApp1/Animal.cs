@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Animal
+    public abstract class Animal
     {
-        public virtual void Move()
-        {
-            Console.WriteLine("Animal is moving");
-        }
+        public int Size { get; set; }
+
+        public int Age { get; set; }
+
+        public abstract void Move();
     }
 }

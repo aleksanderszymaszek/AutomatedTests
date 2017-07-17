@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Dog :Animal
+    public class Dog : WalkingAnimals
     {
+        public Dog(int age, int size)
+        {
+            Age = age;
+            Size = size;
+        }
+
         public override void Move()
         {
             Console.WriteLine("Dog is moving");

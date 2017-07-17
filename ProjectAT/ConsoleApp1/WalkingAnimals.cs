@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class Bird : Animal
+    public abstract class WalkingAnimals : Animal
     {
-        public override void Move()
+        public void Jump()
         {
-            Console.WriteLine("Bird is flying");
         }
     }
 }
